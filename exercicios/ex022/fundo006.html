@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            background-color: #869ecc;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            /* background-color: #869ecc;
+                background-image: url(imagens/wallpaper002.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+
+              -- Shorthand - Background -- 
+                color > image > position > repeat > *size* > attachment
+
+                size nao funciona na shorthand
+            */
+
+            background: #869ecc url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
+            min-height: 100vh;
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -26,6 +37,9 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis hic doloribus tempora nihil ad aperiam ratione expedita, amet ea id eos temporibus, sunt sequi impedit voluptatibus, et nisi. Consequuntur, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a alias magni neque ut ex, nostrum ad doloribus optio voluptates, voluptate libero sint sapiente perspiciatis, earum nam eos odio asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minus sint necessitatibus tenetur. Minima deserunt dolorem harum iste nemo perspiciatis vitae numquam deleniti porro earum unde delectus, molestias nesciunt dolorum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis hic doloribus tempora nihil ad aperiam ratione expedita, amet ea id eos temporibus, sunt sequi impedit voluptatibus, et nisi. Consequuntur, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a alias magni neque ut ex, nostrum ad doloribus optio voluptates, voluptate libero sint sapiente perspiciatis, earum nam eos odio asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minus sint necessitatibus tenetur. Minima deserunt dolorem harum iste nemo perspiciatis vitae numquam deleniti porro earum unde delectus, molestias nesciunt dolorum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis hic doloribus tempora nihil ad aperiam ratione expedita, amet ea id eos temporibus, sunt sequi impedit voluptatibus, et nisi. Consequuntur, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a alias magni neque ut ex, nostrum ad doloribus optio voluptates, voluptate libero sint sapiente perspiciatis, earum nam eos odio asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minus sint necessitatibus tenetur. Minima deserunt dolorem harum iste nemo perspiciatis vitae numquam deleniti porro earum unde delectus, molestias nesciunt dolorum.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis hic doloribus tempora nihil ad aperiam ratione expedita, amet ea id eos temporibus, sunt sequi impedit voluptatibus, et nisi. Consequuntur, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a alias magni neque ut ex, nostrum ad doloribus optio voluptates, voluptate libero sint sapiente perspiciatis, earum nam eos odio asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minus sint necessitatibus tenetur. Minima deserunt dolorem harum iste nemo perspiciatis vitae numquam deleniti porro earum unde delectus, molestias nesciunt dolorum.</p>
     </main>
     

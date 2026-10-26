@@ -1,10 +1,9 @@
-
-
-/* CONFIGURAÇÕES GERAIS */
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
 
 :root {
+
     --cor0:#FFE9C9;
     --cor1:#FF9900;
     --cor2:#CC8B29;
@@ -56,10 +55,10 @@ nav a {
     color: var(--cor1);
     font-family: var(--fonte01);
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 7px;
     font-weight: 500;
     transition: 0.5s;
-    padding: 8px;
+    padding: 7px;
     border-radius: 3px;
 }
 
