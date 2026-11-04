@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In natus ex iusto ducimus aliquid delectus soluta facere voluptatibus? Totam aut quisquam distinctio omnis consequatur quaerat dolorum error amet dolore expedita.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cum, reprehenderit dolor consequatur sunt nemo non magnam veritatis aut in nulla eveniet vel, temporibus assumenda a voluptatibus libero alias velit.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Esolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur deserunt rem, nemo enim officia placeat nihil corrupti suscipit deleniti ad eius, aliquid quo quia debitis magnam! Repellendus animi veniam earum?</p><img src='imagens/foto-p.png'>" frameborder="0">
+        <p>Infelizmente seu navegador não é compatível com isto!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto aut nesciunt maxime voluptatibus ipsa libero nostrum incidunt, aperiam illo tenetur temporibus minus assumenda dignissimos reprehenderit asperiores a. Quisquam, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur at amet debitis omnis unde similique sunt numquam, totam eaque iste. Nihil, provident ex nam facilis minus unde repellat voluptates molestiae!</p>
+</body>
+</html>
