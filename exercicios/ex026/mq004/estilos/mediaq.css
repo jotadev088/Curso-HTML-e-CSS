@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* Outros dispositivos */
+
+/* Typical Device Breakpoints
+W3C em 2026
+small phone: 320-479px
+phone: 480-639px
+small tablet: 640-767px
+tablet: 768-1023px
+laptop: 1024-1279px
+desktop: 1290-1535px
+large desktop: 1536px+
+*/
+
+/* IMPRESSÃO */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    /* background não imprime */
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Site impresso por jotinha';
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) and (max-width: 1535px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg)
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+
+}
+
+/* LARGER */
+@media screen and (min-width: 1535px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
