@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde água escuro: #407364
+    Verde água: #58A689
+    cinza quente: #BFBDA4
+    creme: #D9D4BF
+    marrom: #261008
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+html, body {
+    background-color: #407364;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    background-color: #D9D4BF;
+    width: 350px;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #261008a2;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#image {
+    background: #D9D4BF url(../imagens/pexels-teju-215592370-26167746.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: left top;
+    display: block;
+}
+
+section#login > div#form {
+    padding: 20px;
+    display: block;
+    
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+div#form > p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+  color: #D9D4BF;
+  font-size: 2em !important;
+  width: 40px;
+  padding: 5px;
+}
+
+form > div.campo {
+    background-color: #261008;
+    width: 100%;
+    display: block;
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input {
+    background-color: #BFBDA4;
+    font-size: 1em;
+    height: 80%;
+    width: calc(100% - 50px);
+    padding: 10px;
+
+    transform: translateY(-3px);
+
+    border: 0px;
+    border-radius: 5px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #58A689;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form > input[type=submit]:hover {
+    background-color: #407364;    
+    
+}
+
+form > a.button {
+    display: grid;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    place-items: center;
+
+
+    background-color: none;
+    border: 2px solid #58A689;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #407364;
+
+    transition: 0.3s;
+}
+
+form > a.button:hover {
+    background-color: #58A689;
+    color: white;
+}
+
