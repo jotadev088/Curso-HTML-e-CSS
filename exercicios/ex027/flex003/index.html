@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 1.3em;
+        }
+
+        div.container {
+            background-color: lightcyan;
+
+            display: flex;
+            /* 
+                flex-direction: row;
+                flex-wrap: wrap; 
+                ou...
+            */
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center;
+            flex: auto;
+
+        }
+
+        /*  
+        flex-flow = shorthand de flex-direction + flex-wrap
+
+        ex: flex-flow: row nowrap;
+
+        justify-content: alinhamento em relação ao main-axis
+
+        justify-content: flex-start = conteúdo começa no main-start. se houver espaço em branco, fica no main-end.
+
+        justify-content: flex-end = último item começa no main-end e se houver espaço em branco fica no main-start.
+
+        justify-content: center = conteúdo fica centralizado no main-axis.
+
+        justify-content: space-between = primeiro conteúdo no main-start e último conteúdo no main-end. espaçamento igual entre os outros elementos distribuídos no container.
+
+        justify-content: space-evenly = não gruda os elementos nas pontas. antes e depois de todos os itens há espaços iguais.
+
+        justify-content: space-around = cria espaços dos dois lados (main-axis) de cada item.
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+
+    </div>
+    
+</body>
+</html>

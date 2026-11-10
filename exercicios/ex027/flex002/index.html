@@ -6,13 +6,6 @@
     <title>Flexbox</title>
 
     <style>
-        div.container {
-            background-color: lightgreen;
-
-            display: flex;
-            flex-direction: row;
-        }
-
         /* Flex-direction
 
             row: linha - horizontal - esquerda pra direita
@@ -25,7 +18,19 @@
             main-axis : main-star & main-end
             cross-axis : cross-start & cross-end
 
+            flex-wrap: empacotamento
+            flex-wrap: nowrap; = não quebra (padrão)
+            flex-wrap: wrap; = quebra no sentido do main-axis
+            flex-wrap: wrap-reverse; = óbvio
+
         */
+
+        div.container {
+            background-color: lightgreen;
+
+            display: flex;
+            flex-direction: row;
+        }
 
         div.item {
             background-color: antiquewhite;
