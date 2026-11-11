@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;
+            font-size: 1.3em;
+        }
+
+        main {
+            border: 2px solid black;
+            height: 95vh;
+            margin: 10px;
+
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: auto auto auto;
+            /* OU */
+            grid-template: 100px 100px 100px / auto auto auto;
+
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+            gap: 2px;
+
+            align-items: stretch; 
+            justify-items: stretch; 
+            /* OU */
+            place-items: stretch stretch;       
+
+            align-content: stretch;
+            justify-content: stretch;
+            /* OU */
+            place-content: stretch stretch;
+
+        }
+
+        div.item {
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </main>
+</body>
+</html>

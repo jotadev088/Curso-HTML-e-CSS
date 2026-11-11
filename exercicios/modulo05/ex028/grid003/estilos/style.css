@@ -1,0 +1,30 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        font-family: monospace;
+        font-size: 1.3em;
+    }
+
+main {
+    border: 2px solid black;
+    height: 45vh;
+    margin: 10px;
+
+    display: grid;
+    gap: 10px;
+
+    grid-auto-rows: 80px;
+    grid-auto-columns: 200px;
+    grid-auto-flow: row;
+    grid-template: repeat(3, 80px) / repeat(3, 1fr);
+
+    place-items: normal normal;       
+    place-content: normal normal;
+
+}
+
+div.item {
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
