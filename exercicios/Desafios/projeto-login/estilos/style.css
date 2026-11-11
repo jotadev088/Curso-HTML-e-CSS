@@ -29,6 +29,11 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
 section#login {
@@ -38,12 +43,7 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 5px #261008a2;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    
     transition: 0.5s;
     transition-timing-function: ease;
 }
@@ -53,12 +53,14 @@ section#login > div#image {
     height: 250px;
     background-size: cover;
     background-position: left top;
-    display: block;
+
+    justify-content: center;
+    align-items: center;
+
 }
 
 section#login > div#form {
     padding: 20px;
-    display: block;
     
 }
 
@@ -84,7 +86,6 @@ div#form > p {
 form > div.campo {
     background-color: #261008;
     width: 100%;
-    display: block;
     height: 60px;
     border-radius: 5px;
     margin: 5px 0px;
@@ -108,7 +109,6 @@ div.campo > input {
 }
 
 form > input[type=submit] {
-    display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -128,19 +128,19 @@ form > input[type=submit]:hover {
 }
 
 form > a.button {
-    display: grid;
     text-align: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    place-items: center;
 
+    display: block;
 
     background-color: none;
     border: 2px solid #58A689;
     border-radius: 5px;
     text-decoration: none;
     color: #407364;
+    padding-top: 8px;
 
     transition: 0.3s;
 }

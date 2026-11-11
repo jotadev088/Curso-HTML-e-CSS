@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex: 1 1 auto;
+}
+
+span#menu {
+    display: block;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
+span#menu:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 0.5s;
+}
+
+header > nav > a {
+    width: 90vw;
+    flex: 1 1 auto;
+}
+
