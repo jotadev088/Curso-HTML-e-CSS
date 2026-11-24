@@ -4,8 +4,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio junto com o Guaranara</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <script src="https://kit.fontawesome.com/fef4ae2582.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#video" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formation" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projects" class="link"><i class="fa-solid fa-diagram-project"></i></a></li>
+                <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ficha">
+            <img class="foto" src="imagens/guanabara-perfil.jpg" alt="Foto do Guanabara">
+
+            <h1>Jotinha Pressão</h1>
+
+            <p>Olá! Sou João Pedro. Tenho 26 anos. Trabalho com criação e desenvolvimento de conteúdos audiovisuais desde 2018, unindo criatividade, técnica e olhar estético para transformar ideias em produções que comunicam, conectam e causam impacto. Busco imprimir identidade em cada projeto, valorizando os detalhes em todas as etapas da produção.</p>
+
+            <div id="social">
+                <a href="https://www.linkedin.com" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.cursoemvideo.com" target="_blank" rel="nofollow"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </section>
+
+        <section id="details">
+            <article id="video">
+                <h2><i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vl0eatPehLs?si=GJXLeVNLRdOYisFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article> <!--Fim article#video-->
+
+            <article id="skills">
+                <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
+
+                <div id="skill-container">
+                    <div class="item"> <!-- Skill HTML -->
+                        <div class="info">
+                            <span class="name">
+                                <i class="fa-brands fa-html5"></i> HTML
+                            </span>
+                            <span class="percent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Skill CSS -->
+                        <div class="info">
+                            <span class="name">
+                                <i class="fa-brands fa-css"></i> CSS
+                            </span>
+                            <span class="percent">
+                                80%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Skill JS -->
+                        <div class="info">
+                            <span class="name">
+                                <i class="fa-brands fa-square-js"></i> JavaScript
+                            </span>
+                            <span class="percent">
+                                30%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Skill Comunicação -->
+                        <div class="info">
+                            <span class="name">
+                                <i class="fa-solid fa-comments"></i> Comunicação
+                            </span>
+                            <span class="percent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!--Fim article#skills-->
+
+            <article id="formation">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+
+                <div id="formation-container">
+                    <div class="curso"> <!-- Formação 01 -->
+                        <p class="period">2014 - 2018</p>
+                        <h3 class="institution">IFCE - Instituto Federal do Ceará</h3>
+                        <p class="titulo">Técnico em Edificações</p>
+                    </div>
+
+                    <div class="curso"> <!-- Formação 02 -->
+                        <p class="period">2019 - 2024</p>
+                        <h3 class="institution">Centro Universitário Leão Sampaio - Unileão</h3>
+                        <p class="titulo">Bacharelado em Direito</p>
+                    </div>
+
+                    <div class="curso"> <!-- Formação 03 -->
+                        <p class="period">2025</p>
+                        <h3 class="institution">Academia Criminal</h3>
+                        <p class="titulo">Pós-Graduação em Advocacia na Lei de Drogas</p>
+                    </div>
+
+                    <div class="curso"> <!-- Formação 04 -->
+                        <p class="period">2026</p>
+                        <h3 class="institution">Curso em Vídeo</h3>
+                        <p class="titulo">Curso de HTML5 e CSS3 - 5 módulos (200h)</p>
+                    </div>
+                </div>
+            </article> <!--Fim article#formation-->
+
+            <article id="projects">
+                <h2><i class="fa-solid fa-diagram-project"></i> Meus Projetos</h2>
+
+                <div id="projects-container">
+                    <div class="project"> <!-- Projeto 01 -->
+                        <img class="foto" src="imagens/projeto-01-videos.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto de Videos</h3>
+                            <p>Projeto treino de inserção de vídeos</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="project"> <!-- Projeto 02 -->
+                        <img class="foto" src="imagens/projeto-02-cordel.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto Cordel</h3>
+                            <p>Projeto de um Cordel Digital</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="project"> <!-- Projeto 03 -->
+                        <img class="foto" src="imagens/projeto-03-android.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto Android</h3>
+                            <p>Um site sobre a história do boneco do Android</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="project"> <!-- Projeto 04 -->
+                        <img class="foto" src="imagens/projeto-04-links.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto Link</h3>
+                            <p>Um projeto sobre links</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="project"> <!-- Projeto 05 -->
+                        <img class="foto" src="imagens/projeto-05-login.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto Login</h3>
+                            <p>Um projeto de tela de login com Html, Css e Js.</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="project"> <!-- Projeto 06 -->
+                        <img class="foto" src="imagens/projeto-06-album.jpg" alt="foto">
+                        <div class="project-info">
+
+                            <p class="period">2026</p>
+                            <h3 class="titulo">Projeto Álbum</h3>
+                            <p>Um projeto de álbum de fotos digital</p>
+                            <details class="description">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque architecto provident vitae itaque harum non quas qui commodi eum! Ratione dolor magnam cupiditate, natus dolorem quam esse fuga aspernatur necessitatibus?</p>
+                            </details>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article> <!--Fim article#projects-->
+        </section>        
+    </main>
+
+    <footer>
+        Portifólio desenvolvido por <a href="https://www.instagram.com/falajotap" target="_blank" rel="nofollow">Jotinha Pressão</a> no Curso de HTML e CSS do Guanabara
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
